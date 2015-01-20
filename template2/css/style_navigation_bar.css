@@ -1,0 +1,103 @@
+/*****************************
+ Navigation Bar
+*****************************/
+#menu {
+    background: #def7a5; /* whole Navigation menu colour */
+    width: 100%;
+}
+/* Level 1 */
+#menu #top {
+    line-height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    width: 960px;
+    z-index: 99;
+    display: inline-block;
+}
+#menu #top li {
+    float: left;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 99;
+}
+/* Top Level Link Styling */
+#menu #top li a {
+    color: #a3bd67; /* wording colour on navigation menu */
+    display: block;
+    font-weight: normal;
+    margin: 0px;
+    padding: 18px 68px;
+    font-size: 12px; /* navigation menu size */
+    line-height: 100%;   
+    font-family: 'roboto_condensedbold';
+    text-transform: uppercase;
+}
+#menu #top li a:hover,
+#menu #top li a:active,
+#menu #top li.current a,
+#menu #top li:hover > a {
+    background: #9dcf2b; /* highlight wording colour on navigation menu  */
+    color: #FFFFFF; /* highlight wording colour on navigation menu  */
+}
+/* Level 2 */
+#menu #top li:hover > ul {
+    display: block;
+}
+#menu #top ul {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    display: none;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 60px;
+    width: 185px;
+    z-index: 99;
+}
+#menu #top ul li {
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 99;
+}
+/* Second Level Link Styling and Onwards */
+#menu #top li > ul li a {
+    background: none;
+    color: #777777;
+    font-weight: normal;
+    padding: 9px 9px 9px 9px;
+    font-size: 12px;
+    line-height: 100%;
+}
+#menu #top li > ul li a:hover {
+    background: #000000 !important;
+    color: #FFFFFF !important;
+}
+/* Level 3 */
+#menu #top ul ul {
+    left: 181px;
+    top: 0px;
+    z-index: 99;
+}
+/* Menu Clearfloat */
+#menu #top:after {
+    content: "."; 
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#menu #top {
+    display: block;
+}
+* html #menu #top {
+    height: 1%;
+}
+*+html #menu #top {
+    height: 1%;
+}

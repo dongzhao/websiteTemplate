@@ -1,0 +1,26 @@
+/*****************************
+ Hyperlinks
+*****************************/
+a {
+    color: #787d6b;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover,
+a:active {
+    color: #64c3d7;
+    text-decoration: none;
+}
+a img {
+    border: 0px;
+}
+
+/*****************************
+ Navigation Bar
+*****************************/
+#menu {
+    /*background: #def7a5;*/
+	background: #9370DB;
+    width: 100%;
+}
+

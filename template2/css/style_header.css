@@ -1,0 +1,42 @@
+/*****************************
+ Header
+*****************************/
+#header {
+    width: 960px;
+    margin: 0px auto;
+    padding: 20px 0;
+    background: none;
+    position: relative;
+}
+/* Logo */
+.logo {
+    margin: 0px;
+    text-align: left;
+}
+.logo img {
+    height: 36px;
+    width: 330px;
+    text-align: left;
+}
+.logo a {
+    display: inline-block;
+}
+/* Featured Image */
+.featured-image {
+    position: relative;
+    width: 100%;
+}
+.featured-image span {
+    background: rgba(255, 255, 255, 0.5);
+    background: #f8f8f8\9;
+    bottom: 0;
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
